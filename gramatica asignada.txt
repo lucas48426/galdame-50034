@@ -1,0 +1,13 @@
+<Comando> ::= <PrefijoComando> <NombreComando> {<Argumento>}*
+<PrefijoComando> ::= "!" "/" | "#" | "&"
+<NombreComando> ::= <Palabra>
+<Argumento> ::= <ArgumentoPosicional> | <ArgumentoOpcional>
+<ArgumentoPosicional> ::= <Texto> | <Palabra> | <Numero>
+<ArgumentoOpcional> ::= " -- " <NombreArgumento> ["=" <ValorArgumento>]
+| "-" <Letra> [<ValorArgumento>]
+<NombreArgumento> ::= <Palabra>
+<ValorArgumento> ::= <Texto> | <Numero> | <Palabra>
+
+<Palabra> ::= [a-zA-ZáéíóúñÑ] [a-zA-Z0-9_áéíóúñÑ]*
+<Numero> ::= [0-9]+ [("." [0-9]+)]
+<Letra> ::= [a-zA-Z]
