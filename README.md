@@ -21,4 +21,4 @@ Este proyecto implementa un analizador sintáctico para comandos de texto, utili
 
 
 git clone https://github.com/galdame/50034.git
-cd 50034/analizador-sintactico  desde este link se puede clonar el repositorio
+cd 50034/analizador-sintactico  desde este link se puede clonar el repositorio el repositorio se clona ejecutando ese comando en el powwer shell o cmd de windows o en la terminal de linux
